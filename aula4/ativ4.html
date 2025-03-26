@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <style>
+      #cabecalho {
+        align-items: center;
+        color: rgb(7, 42, 53);
+        background: linear-gradient(
+          90deg,
+          rgb(217, 245, 252) 0%,
+          rgb(146, 211, 231) 100%
+        );
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 50px;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .borda {
+        text-align: center;
+        border: 10px;
+        margin-top: 170px;
+      }
+      .peso1 {
+        margin-left: 200px;
+        color: rgb(7, 54, 7);
+      }
+      .altura1 {
+        color: rgb(54, 7, 7);
+
+        margin-left: 350px;
+      }
+      #informacoes {
+        border-radius: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+        border: s5px solid rgb(206, 206, 206);
+
+        background: linear-gradient(
+          90deg,
+          rgb(155, 216, 140) 0%,
+          rgb(243, 143, 143) 100%
+        );
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        height: 90px;
+      }
+      #resultado1 {
+        margin-top: 20px;
+        color: rgb(32, 32, 32);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #botao {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="borda">
+      <script src="style.css"></script>
+      <div id="cabecalho"><h3>Calculadora de IMC</h3></div>
+      <div id="informacoes">
+        <label for="nomes">
+          Insira seu nome:
+
+          <input type="text" id="nome" name="nomes" />
+        </label>
+        </br>
+        <label for="peso" class="peso1">
+          Insira seu peso:
+
+          <input type="number" id="peso" name="peso" />
+        </label>
+        <br />
+        <label for="altura" class="altura1">
+          Insira sua altura:
+          <input type="number" id="altura" name="altura" />
+        </label>
+      </div>
+      <div id="resultado1">
+        <div id="botao">
+          <input
+            type="button"
+            id="calc"
+            value="Calcular"
+            onclick="calcular()"
+          />
+        </div>
+        <br />
+
+        <div id="resultado1"><p id="resultado"></p></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
