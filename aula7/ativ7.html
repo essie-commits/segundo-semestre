@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de alunos</title>
+    <link rel="stylesheet" href="ativ7.css" />
+  </head>
+  <body>
+    <form
+      action="https://webhook.site/20c5acff-26c1-4718-8e3c-fb3590cd48ec"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <header>
+        <h2>Cadastro de alunos</h2>
+      </header>
+
+      <main>
+        <label for="id_nome">
+          Nome completo:
+          <input
+            type="text"
+            name="Nome"
+            id="id_nome"
+            minlength="3"
+            maxlength="200"
+            placeholder="Informe seu nome completo"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_email">
+          Email:
+          <input
+            type="email"
+            name="Email"
+            id="id_email"
+            minlength="10"
+            maxlength="200"
+            placeholder="Informe seu email"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_senha">
+          Senha:
+          <input
+            type="password"
+            name="Senha"
+            id="id_senha"
+            minlength="5"
+            maxlength="50"
+            placeholder="Insira uma senha"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_telefone">
+          Telefone:
+          <input
+            type="tel"
+            name="Telefone"
+            id="id_telefone"
+            placeholder="Insira um telefone"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_data">
+          Data de nascimento:
+          <input
+            type="date"
+            name="Nascimento"
+            id="id_data"
+            min="01-01-2000"
+            max="31-12-2025"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_idade">
+          Idade:<input
+            type="number"
+            name="idade"
+            id="id_idade"
+            minlength="1"
+            maxlength="3"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_site">
+          Site:
+          <input
+            type="url"
+            name="Site"
+            minlength="5"
+            maxlength="60"
+            placeholder="Insira um site"
+            required
+          />
+        </label>
+
+        <br />
+        <br />
+        <br />
+
+        <label for="id_foto">
+          Envie sua foto:
+          <br />
+          <br />
+          <input type="file" id="id_foto" required />
+        </label>
+
+        <br />
+        <br />
+        <br />
+
+        <label for="id_bio">
+          Biografia:
+          <textarea name="Biografia" id="id_bio" rows="5" cols="35"></textarea>
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_cor">
+          cor favorita:<input type="color" name="cor" id="id_cor" required />
+        </label>
+
+        <br />
+        <br />
+        <br />
+
+        <label for="id_conhecimento">
+          <fieldset>
+            <legend>Níveis de conhecimento</legend>
+            <br />
+
+            <label for="id_HTML">
+              HTML:<input
+                type="range"
+                name="HTML"
+                id="id_HTML"
+                max="10"
+                min="0"
+                value="5"
+                required
+              />
+            </label>
+
+            <label for="id_CSS">
+              CSS:<input
+                type="range"
+                name="CSS"
+                id="id_CSS"
+                max="10"
+                min="0"
+                value="5"
+                required
+              />
+            </label>
+
+            <label for="id_JS">
+              Javascript:<input
+                type="range"
+                name="Javascript"
+                id="id_JS"
+                max="10"
+                min="0"
+                value="5"
+                required
+              />
+            </label>
+          </fieldset>
+        </label>
+      </main>
+
+      <br />
+      <br />
+
+      <footer>
+        <label for="id_envio">
+          <input type="submit" name="envio" id="id_envio" value="Enviar" />
+        </label>
+
+        <br />
+        <br />
+
+        <label for="id_reset">
+          <input type="reset" name="reset" id="id_reset"
+        /></label>
+      </footer>
+    </form>
+  </body>
+</html>
