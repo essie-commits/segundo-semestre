@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabuada</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form id="formulario">
+      <h2>tabuada</h2>
+
+      <p id="subtitle">
+        digite um número que calculamos a sua tabuada para você
+      </p>
+
+      <br />
+
+      <label for="numero">
+        <input type="number" name="numero" id="numero" />
+      </label>
+
+      <label for="operacao">
+        <select name="operacao" id="operacao">
+          <option value="1">adição</option>
+          <option value="2">subtração</option>
+          <option value="3">multiplicação</option>
+          <option value="4">divisão</option>
+        </select>
+      </label>
+
+      <div class="botoes">
+        <label for="submit">
+          <button type="button" onclick="Calcular()" value="calcular">
+            calcular
+          </button>
+          <button type="reset" value="Limpar">Limpar</button>
+        </label>
+      </div>
+
+      <p id="resultado"></p>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

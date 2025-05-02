@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array de Sabores</title>
+    <link rel="stylesheet" href="style_pizza.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Array de Sabores | Pizzaria</h1>
+    </header>
+    <form id="form_pizza" name="formulario">
+      <label for="id_nome">
+        Nome completo:
+        <input
+          type="text"
+          name="nome"
+          id="id_nome"
+          minlength="5"
+          maxlength="200"
+          placeholder="Informe seu nome completo"
+          required
+        />
+      </label>
+
+      <!-- Checkbox -->
+      <fieldset>
+        <legend><strong>Escolha os ingredientes da sua pizza:</strong></legend>
+
+        <label for="id_queijo">
+          <input
+            type="checkbox"
+            name="ingredientes"
+            id="id_queijo"
+            value="queijo"
+          />
+          Queijo
+        </label>
+
+        <label for="id_calabresa">
+          <input
+            type="checkbox"
+            name="ingredientes"
+            id="id_calabresa"
+            value="calabresa"
+          />
+          Calabresa
+        </label>
+
+        <label for="id_tomate">
+          <input
+            type="checkbox"
+            name="ingredientes"
+            id="id_tomate"
+            value="tomate"
+          />
+          Tomate
+        </label>
+
+        <label for="id_cebola">
+          <input
+            type="checkbox"
+            name="ingredientes"
+            id="id_cebola"
+            value="cebola"
+          />
+          Cebola
+        </label>
+      </fieldset>
+
+      <!-- Radio buttons -->
+      <fieldset>
+        <legend><strong>Escolha o tamanho da pizza:</strong></legend>
+
+        <label for="id_pequena">
+          <input type="radio" name="tamanho" id="id_pequena" value="pequena" />
+          Pequena (4 fatias)
+        </label>
+
+        <label for="id_media">
+          <input type="radio" name="tamanho" id="id_media" value="media" />
+          Média (6 fatias)
+        </label>
+
+        <label for="id_grande">
+          <input type="radio" name="tamanho" id="id_grande" value="grande" />
+          Grande (8 fatias)
+        </label>
+
+        <label for="id_familia">
+          <input type="radio" name="tamanho" id="id_familia" value="familia" />
+          Família (12 fatias)
+        </label>
+      </fieldset>
+
+      <label for="id_massa"><strong>Escolha o tipo de massa:</strong></label>
+      <select id="id_massa" name="massa">
+        <option value="">Selecione o tipo de massa...</option>
+        <optgroup label="Massas clássicas">
+          <option value="fina">Massa fina</option>
+          <option value="tradicional">Massa tradicional</option>
+        </optgroup>
+
+        <optgroup label="Massas especiais">
+          <option value="pan">Massa pan (fofinha)</option>
+          <option value="integral">Massa integral</option>
+          <option value="sem_gluten">Massa sem glúten</option>
+        </optgroup>
+      </select>
+
+      <label for="id_endereco">
+        Endereço:
+        <input
+          type="text"
+          name="endereco"
+          id="id_endereco"
+          minlength="5"
+          maxlength="200"
+          placeholder="Informe seu endereço completo"
+          required
+        />
+      </label>
+
+      <div class="botoes">
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="limpar">Limpar</button>
+      </div>
+    </form>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
