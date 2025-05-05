@@ -23,8 +23,12 @@ export default class contaBancaria {
   }
 
   depositar(valor) {
-    this.#saldo += valor;
-    console.log(`seu saldo é de ${saldo}`);
+    if (valor > 0) {
+      this.#saldo += valor;
+      console.log(`seu saldo é de ${saldo}`);
+    } else {
+      console.log(`não é possível realizar essa operação: valor inválido`)
+    }
     return this.#saldo;
   }
 
